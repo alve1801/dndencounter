@@ -9,8 +9,8 @@ char current=0,cx,cy;
 unsigned char newtile;short newcol; // for retiling
 field rin;
 
-img doom=loadimg("doom.ppm");
-img hc=loadimg("beryldintro.ppm");
+//img doom=loadimg("doom.ppm");
+//img hc=loadimg("beryldintro.ppm");
 
 int main(){
 	Framework window=Framework(640,480,2);
@@ -18,8 +18,8 @@ int main(){
 	rin.load("save.dnd");
 
 	window.userfunc=[](Framework*window){
-		window->pi(doom,0,rin.size*8+24);
-		window->pi(hc,123,rin.size*8+24);
+		//window->pi(doom,0,rin.size*8+24);
+		//window->pi(hc,123,rin.size*8+24);
 
 		// draw field border
 		window->pc('+',0,1,0xfff,0);
