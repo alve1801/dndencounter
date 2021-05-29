@@ -18,7 +18,6 @@ class entity{public:
 	int x,y;
 	char effect;
 
-	//entity():c('c'),color(0xf1),name("Urist"),x(5),y(12),effect(0){} // XXX defparam
 	entity(char c='c',short col=0xf1,char*name="Urist",int x=0,int y=0,char effect=0):c(c),color(col),name(name),x(x),y(y),effect(effect){}
 
 	entity(FILE*f){
